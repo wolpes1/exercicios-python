@@ -23,7 +23,7 @@ while (not acertou and not enforcou):
         posicao = 0
         for letra in palavra_secreta:
             if (chute.upper() == letra.upper()):
-                print(f'Encontrei a letra \'{letra}\' na posição {posicao}!')
+                print(f'Encontrei a letra \'{letra}\' na posição {posicao+1}!')
                 letras_certas[posicao] = letra
                 print(letras_certas)
             posicao += 1
