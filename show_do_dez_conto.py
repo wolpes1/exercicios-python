@@ -14,9 +14,13 @@ menu_escolha_intro = 'O que você deseja fazer? A)Jogar ou B)Sair?\n'
 erro_escolha = 'Esta não é uma opção! Por favor, escolha entre as duas letras maiores (A ou B).\n'
 agradecimentos = 'Obrigado por jogar conosco!\nPressione enter para sair.'
 ganhador = 'Parabéns, você ganhou os dez conto!\nPressione enter para sair.'
-perdedor = 'Você perdeu :('
 
 # Funções
+
+def perdeu():
+    clear_screen()
+    print('Você perdeu :(')
+    input('Pressione enter para sair.')
 
 def analizar_resposta_menu(resposta,resposta_correta_1,resposta_correta_2):
     while resposta.upper() != resposta_correta_1 and resposta.upper() != resposta_correta_2:
@@ -109,70 +113,70 @@ else:
         pergunta_1()
         correcao = responder_pergunta('B')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
         
         correcao = None
         pergunta_2()
         correcao = responder_pergunta('D')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_3()
         correcao = responder_pergunta('A')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_4()
         correcao = responder_pergunta('C')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
         
         correcao = None
         pergunta_5()
         correcao = responder_pergunta('D')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
         
         correcao = None
         pergunta_6()
         correcao = responder_pergunta('C')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_7()
         correcao = responder_pergunta('B')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_8()
         correcao = responder_pergunta('A')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_9()
         correcao = responder_pergunta('D')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         correcao = None
         pergunta_10()
         correcao = responder_pergunta('C')
         if correcao == False:
-            input(perdedor)
+            perdeu()
             break
 
         clear_screen()
